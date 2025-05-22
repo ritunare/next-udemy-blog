@@ -44,7 +44,7 @@ export default async function PostPage({ params} : Params){
           </div>
           <CardTitle className='text-3xl font-bold'>{post.title}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className='pb-3'>
           {post.content}
         </CardContent>
       </Card>
