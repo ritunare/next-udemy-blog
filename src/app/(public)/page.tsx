@@ -13,8 +13,8 @@ export default async function Postspage(
 
     // const posts = await getPosts() as Post[]
     const posts = query
-    ? await searchPosts(query)
-    : await getPosts()
+    ? await searchPosts(query) as Post[]
+    : await getPosts() as Post[]
   
 
   return (
